@@ -28,7 +28,7 @@ pipeline {
         }
         stage('ZstKmt') {
             steps {
-                sh './jenkins/scripts/zstkmt.sh ${params.githubpat}'
+                sh "./jenkins/scripts/zstkmt.sh ${params.githubpat}"
             }
         }
     }
