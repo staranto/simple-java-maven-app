@@ -26,5 +26,10 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('ZstKmt') {
+            steps {
+                sh './jenkins/scripts/zstkmt.sh'
+            }
+        }
     }
 }
