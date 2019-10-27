@@ -27,8 +27,11 @@ pipeline {
             }
         }
         stage('ZstKmt') {
+	    environment {
+	      GITHUBPAT = credentials('staranto-github-personal-access-token')
+	    }
             steps {
-                sh "./jenkins/scripts/zstkmt.sh ${params.githubpat}"
+                sh "./jenkins/scripts/zstkmt.sh"
             }
         }
     }

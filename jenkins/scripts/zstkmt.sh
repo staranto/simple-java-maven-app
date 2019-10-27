@@ -5,7 +5,7 @@ id
 env
 
 token="$1"
-echo token=$token
+echo token=$GITHUBPAT
 
 release=$(curl -XPOST -H "Authorization:token $token" --data "{\"tag_name\": \"mytag\", \"target_commitish\": \"master\", \"name\": \"myname\", \"body\": \"mydesc\", \"draft\": false, \"prerelease\": true}" https://api.github.com/repos/staranto/simple-java-maven-app/releases)
 echo release=$release
