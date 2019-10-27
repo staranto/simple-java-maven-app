@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+pwd
+tree
+id
+env
+
+
 token="$1"
 token=67ffc2b497c657004f8c871cce4bd5f0a21e843d
 echo token=$token
